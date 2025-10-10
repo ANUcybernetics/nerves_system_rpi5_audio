@@ -1,8 +1,8 @@
 defmodule NervesSystemRpi5.MixProject do
   use Mix.Project
 
-  @github_organization "nerves-project"
-  @app :nerves_system_rpi5
+  @github_organization "ANUcybernetics"
+  @app :nerves_system_rpi5_audio
   @source_url "https://github.com/#{@github_organization}/#{@app}"
   @version Path.join(__DIR__, "VERSION")
            |> File.read!()
@@ -75,7 +75,7 @@ defmodule NervesSystemRpi5.MixProject do
   end
 
   defp description do
-    "Nerves System - Raspberry Pi 5 (64-bits)"
+    "Nerves System - Raspberry Pi 5 (64-bits) with USB audio/MIDI support"
   end
 
   defp docs do
@@ -96,7 +96,7 @@ defmodule NervesSystemRpi5.MixProject do
       links: %{
         "GitHub" => @source_url,
         "REUSE Compliance" =>
-          "https://api.reuse.software/info/github.com/nerves-project/nerves_system_rpi5"
+          "https://api.reuse.software/info/github.com/ANUcybernetics/nerves_system_rpi5_audio"
       }
     ]
   end
