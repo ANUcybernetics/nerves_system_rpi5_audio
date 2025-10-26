@@ -104,7 +104,11 @@ defmodule NervesSystemRpi5.MixProject do
   defp package_files do
     [
       "fwup_include",
-      "rootfs_overlay",
+      "rootfs_overlay/boot",
+      "rootfs_overlay/etc",
+      # Exclude large Tailscale binaries from Hex package (still in git/GitHub)
+      # "rootfs_overlay/usr/bin/tailscale",
+      # "rootfs_overlay/usr/sbin/tailscaled",
       "CHANGELOG.md",
       "cmdline.txt",
       "config.txt",
