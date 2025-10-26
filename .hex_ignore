@@ -1,0 +1,3 @@
+# Exclude Tailscale static binaries from Hex package (too large)
+rootfs_overlay/usr/bin/tailscale
+rootfs_overlay/usr/sbin/tailscaled
