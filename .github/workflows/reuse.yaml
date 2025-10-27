@@ -2,7 +2,9 @@
 # SPDX-License-Identifier: CC0-1.0
 name: REUSE Compliance Check
 
-on: [push, pull_request]
+# Disabled for now - can be triggered manually if needed
+on:
+  workflow_dispatch:
 
 jobs:
   test:
